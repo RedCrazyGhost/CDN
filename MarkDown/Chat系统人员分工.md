@@ -1,19 +1,19 @@
 # Chat系统人员分工
-编写人：占文星
+编写人：RedCrazyGhost
 更新时间：2021年12月15日
 
 ```mermaid
 gantt
     title Chat系统任务分配
     dateFormat  YYYY-MM-DD
-    section 占文星
+    section RedCrazyGhost
     成员分工表 :work,2021-11-25,20d
     Server   :Server,2021-11-25,10d
     Server和Client联调整合 :after Server,10d
-    section 任涛
+    section 客户端-Home
     Client-HomeView :HomeView,2021-11-25,10d
     Chat系统PPT :after HomeView,10d
-    section 袁宏业
+    section 客户端-System
     Client-SystemView :SystemView,2021-11-25,10d
     Chat系统实验报告 :after SystemView,10d
 ```
@@ -21,11 +21,11 @@ gantt
 
 ## Chat系统项目截止日期：2021年12月15日
 
-### 设计实验报告（3份）
-占文星、任涛、袁宏业
+### 设计实验报告（1份）
+RedCrazyGhost
 
-### 答辩PPT（1份）分工如下
-任涛、袁宏业
+### 答辩PPT（1份）
+RedCrazyGhost
 
 ## 主要开发工作截止日期：2021年12月5日
 
@@ -144,7 +144,7 @@ database:
 |response-message|"操作成功！"|
 
 ### 源码（1份）分工如下
-#### 占文星
+#### RedCrazyGhost
 
 ```mermaid
 flowchart TD
@@ -175,7 +175,7 @@ flowchart TD
 |9|✅|Server-Fucntion-DataBase-DataManage|服务端-功能-数据库-数据管理|
 |10|✅|Server-Fucntion-Log|服务端-功能-日志|
 
-#### 任涛
+#### 客户端-Home
 
 ```mermaid
 flowchart TD
@@ -198,7 +198,7 @@ flowchart TD
 |7|✅|Client-Function-Home-RetrievePassword|客户端-首页-功能-找回密码|
 |8|✅|Client-Function-Home-Quit|客户端-首页-功能-系统退出|
 
-#### 袁宏业
+#### 客户端-System
 
 ```mermaid
 flowchart TD
