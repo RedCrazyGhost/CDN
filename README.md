@@ -1,4 +1,4 @@
-# RedCrazyGhost CDN
+# [RedCrazyGhost CDN](https://www.jsdelivr.com/package/gh/RedCrazyGhost/CDN)
 
 1. 使用Github Releases发布版本资源
 2. 使用下方URL模版访问
