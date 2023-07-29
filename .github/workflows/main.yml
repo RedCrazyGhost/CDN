@@ -17,14 +17,12 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: "redcrazyghost/CDN@latest"
+      - uses: "uses: softprops/action-gh-release@v0.1.15"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          Automatic_release_tag: "latest"
-          draft: "Automatic Releases"
-          prerelease: true
-          files: |
-            *
+          files: '*.*'
+        
     
         
         
