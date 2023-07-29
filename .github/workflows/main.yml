@@ -17,6 +17,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
+      - uses: actions/checkout@v3
       - uses: "softprops/action-gh-release@v1"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -24,10 +25,7 @@ jobs:
           prerelease: false
           tag_name: 'latest'
           name: 'latest'
-          files: |
-            **
-            ./**
-            ./TTF/**
+          files: '**'
         
     
         
