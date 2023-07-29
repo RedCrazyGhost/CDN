@@ -20,9 +20,9 @@ jobs:
       - uses: "redcrazyghost/CDN@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          Automatic_release_tag: "${{ steps.date.outputs.date }}"
+          Automatic_release_tag: "latest"
           draft: "Automatic Releases"
-          prerelease: false
+          prerelease: true
           files: |
             *
     
