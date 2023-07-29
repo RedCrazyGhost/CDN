@@ -17,7 +17,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - uses: redcrazyghost/CDN
+      - uses: "redcrazyghost/CDN@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           Automatic_release_tag: "${{ steps.date.outputs.date }}"
