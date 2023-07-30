@@ -23,8 +23,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           prerelease: false
-          tag_name: ${{ steps.date.outputs.date }}
-          name: ${{ steps.date.outputs.date }}
+          tag_name: '${{ steps.date.outputs.date }}'
+
 
 
         
