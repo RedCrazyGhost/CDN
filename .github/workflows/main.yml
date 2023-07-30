@@ -25,6 +25,7 @@ jobs:
           prerelease: false
           tag_name: 'latest'
           name: 'latest'
+          files: '**'
 
         
     
