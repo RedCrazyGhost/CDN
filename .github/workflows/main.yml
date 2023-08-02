@@ -25,6 +25,7 @@ jobs:
           prerelease: false
           draft: false
           name: ${{ steps.date.outputs.date }}
+          tag_name: ${{ steps.date.outputs.date }}
 
 
         
