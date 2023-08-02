@@ -18,16 +18,14 @@ jobs:
     timeout-minutes: 10
 
     steps:
+    # 参数date
+      - id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - uses: actions/checkout@v3
-      - name: 'Get Previous tag'
-        id: previous_tag
-        uses: "WyriHaximus/github-action-get-previous-tag@v1"
-        with:
-          fallback: 1.0.0
       - uses: "softprops/action-gh-release@v1"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           prerelease: false
           draft: false
-          tag_name: ${{steps.previous_tag.outputs.tag}}
+          tag_name: ${{ steps.date.outputs.date }}
