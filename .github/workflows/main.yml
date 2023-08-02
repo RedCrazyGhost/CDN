@@ -1,13 +1,13 @@
 name: Automatic Releases
 # 自动发布CDN内容
 on:
-  tag:
-    - '*'
   # 可以手动执行
   workflow_dispatch:
   
   # push到master分支时执行
   push:
+    tags:
+      - '*'
     branches:
     - master
     - main
