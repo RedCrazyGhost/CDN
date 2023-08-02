@@ -24,8 +24,8 @@ jobs:
         with:
           prerelease: false
           draft: false
-          name: ${{ steps.date.outputs.date }}
-          tag_name: ${{ steps.date.outputs.date }}
+          name: "${{ steps.date.outputs.date }}"
+          tag_name: "${{ steps.date.outputs.date }}"
 
 
         
