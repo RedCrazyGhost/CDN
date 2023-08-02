@@ -24,7 +24,7 @@ jobs:
         with:
           prerelease: false
           draft: false
-
+          name: ${{ steps.date.outputs.date }}
 
 
         
