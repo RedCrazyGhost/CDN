@@ -19,19 +19,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - name: 'Get Previous tag'
+        id: previous_tag
+        uses: "WyriHaximus/github-action-get-previous-tag@v1"
+        with:
+          fallback: 1.0.0
       - uses: "softprops/action-gh-release@v1"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           prerelease: false
           draft: false
-          name: "${{ steps.date.outputs.date }}"
-          tag_name: "${{ steps.date.outputs.date }}"
-
-
-
-        
-    
-        
-        
-     
+          tag_name: ${{steps.previous_tag.outputs.tag}}
