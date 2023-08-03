@@ -20,7 +20,7 @@ jobs:
     steps:
     # 参数date
       - id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "date=$(date +'%Y-%m-%d')"  >> "$GITHUB_ENV"
       - uses: actions/checkout@v3
       - uses: "softprops/action-gh-release@v1"
         env:
@@ -28,4 +28,5 @@ jobs:
         with:
           prerelease: false
           draft: false
-          tag_name: ${{ steps.date.outputs.date }}
+          tag_name: ${{ env.date }}
+          name: ${{ env.date }}
