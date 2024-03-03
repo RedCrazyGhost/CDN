@@ -6,7 +6,7 @@
 2. 使用下方URL模版访问
 
 ```url
-https://cdn.jsdelivr.net/gh/RedCrazyGhost/CDN@latest/
+https://cdn.jsdelivr.net/gh/RedCrazyGhost/CDN
 ```
 
 ```url
